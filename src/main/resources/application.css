@@ -1,0 +1,15 @@
+.round-image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
+    -fx-shape: "M50,0 C22.4,0 0,22.4 0,50 C0,77.6 22.4,100 50,100 C77.6,100 100,77.6 100,50 C100,22.4 77.6,0 50,0 Z";
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.round-button {
+    -fx-background-color: #20B2AA;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #ffffff;
+}
+
+
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@loginDesign.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.yi.board.Controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="170.0" prefHeight="35.0" prefWidth="200.0" styleClass="right-form-font" text="로그인 페이지">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="339.0" layoutY="14.0" prefHeight="400.0" prefWidth="231.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="100.0" prefHeight="50.0" prefWidth="100.0" text="ID : ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="160.0" prefHeight="50.0" prefWidth="100.0" text="PW : ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfId" layoutX="80.0" layoutY="110.0" prefHeight="30.0" prefWidth="180.0" />
+                  <TextField fx:id="tfPw" layoutX="80.0" layoutY="170.0" prefHeight="30.0" prefWidth="180.0" />
+                  <Button layoutX="80.0" layoutY="273.0" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="180.0" styleClass="round-button" text="로그인">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="250.0" layoutY="10.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="40.0" styleClass="close">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" wrappingWidth="8.214285850524902" />
+                     </graphic>
+                  </Button>
+                  <FontAwesomeIcon glyphName="USER" layoutX="130.0" layoutY="75.0" size="5em" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

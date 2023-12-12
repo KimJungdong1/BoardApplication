@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#handleMouseClicked" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.yi.board.MainController">
+    <children>
+        <Label layoutX="360.0" layoutY="30.0" text="게시판 목록보기">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <TableView fx:id="boardTableView" layoutX="53.0" layoutY="92.0" prefHeight="390.0" prefWidth="795.0" style="-fx-background-color: skyblue;">
+            <columns>
+                <TableColumn fx:id="colCbDelete" prefWidth="50.0">
+                    <graphic>
+                        <CheckBox fx:id="cbAll" mnemonicParsing="false" text="CheckBox" />
+                    </graphic>
+                </TableColumn>
+                <TableColumn fx:id="colBoardNo" prefWidth="50.0" text="글번호" />
+                <TableColumn fx:id="colTitle" prefWidth="250.0" text="제목" />
+                <TableColumn fx:id="colWriter" prefWidth="120.0" text="작성자" />
+                <TableColumn fx:id="colRegDate" prefWidth="160.0" text="등록일자" />
+                <TableColumn fx:id="colUpdDate" prefWidth="160.0" text="수정일자" />
+            </columns>
+        </TableView>
+        <Button layoutX="53.0" layoutY="501.0" mnemonicParsing="false" onAction="#close" styleClass="round-button" stylesheets="@../../../../application.css" text="종료하기">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button layoutX="744.0" layoutY="501.0" mnemonicParsing="false" onAction="#deleteSelected" text="글삭제">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btninsery" layoutX="631.0" layoutY="501.0" mnemonicParsing="false" onAction="#moveToInsert" styleClass="round-button" stylesheets="@../../../../application.css" text="글등록">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+      <Pagination fx:id="pagination" layoutX="326.0" layoutY="497.0" prefHeight="47.0" prefWidth="205.0" />
+        <ImageView fitHeight="71.0" fitWidth="150.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Images/puppy.jpeg" />
+         </image>
+        </ImageView>
+    </children>
+</AnchorPane>
